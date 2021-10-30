@@ -303,6 +303,15 @@ class Bigint
 
             Bigint temp, result;
 
+            if(this->sign==n.sign)
+            {
+                result.sign=1;
+            }
+            else
+            {
+                result.sign=-1;
+            }
+
             for (int a = 0; a < s.size(); a++)
                 result.s += "0";
 
